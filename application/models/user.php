@@ -25,7 +25,34 @@ Class User extends CI_Model
  {
 	 if($this -> session -> userdata('logged_in'))
 		 return true;
-	 return false;
+	 
+	 $this -> session -> set_userdata('error_message', 'Not logged in!');
+	
+	return false;
+ }
+ 
+ function email_exist($email)
+ {
+	$this -> db -> select('email');
+	$this -> db -> from('users');
+	$this -> db -> where('email', $email);
+	$query = $this -> db -> get();
+	
+	if($query -> num_rows() == 0)
+		return false;
+	else
+		return true;
+ }
+ 
+ function add_username($name, $email, $password)
+ {
+	$var = array(
+		'name' => $name,
+		'email' => $email,
+		'password' => $password,
+	);
+
+	$this->db->insert('users', $var); 
  }
 }
 ?>

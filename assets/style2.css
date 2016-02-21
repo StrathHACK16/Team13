@@ -1,0 +1,196 @@
+
+h1 { color: #FFFFFF; text-shadow: 0 0 10px rgba(0,0,0,0.3); letter-spacing:5px; text-align:center; }
+
+.loginpage {
+  width: 200px;
+  padding: 0 0 0;
+  margin: auto;
+}
+
+.loginform{
+position: relative;
+opacity: 0.85;
+margin: 0 auto;
+text-align: center;
+margin: auto;
+}
+
+.loginform button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 95%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.loginform button:hover,.loginform button:active,.loginform button:focus {
+  background: #43A047;
+}
+
+html, body {
+background-size: cover;
+height: 100%;
+ overflow: auto;
+ margin: 0;
+ font-family: "Roboto", sans-serif;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale; 
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+      #map {
+        width: 100%;
+        height: 100%;
+		background-color: #CCC;
+      }
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navigation:hover {
+	background: #43A047;
+}
+
+.active {
+background-color:#4CAF50;
+}
+
+.node{
+width:auto;
+height:300px;
+
+overflow:auto;
+position: relative;
+float: top;
+padding:5px;
+}
+
+.node table{ line-height:3em;}
+
+.node2
+{
+	width: 1024px;
+	margin: 0 auto;
+}
+
+
+.loc_details2
+{
+	width: 190px;
+	padding: 1px;
+}
+
+.loc_details2 h1 { font-size: 14px; }
+
+.item2 
+{
+	float: left;
+	margin: 40px 22px 0 22px;
+}
+
+.item2 img {
+	width: 190px;
+	height: 180px;
+}
+
+#item, #location{
+    width: auto;
+	height: auto;
+    white-space: nowrap;
+}
+
+.location{
+	float: left;
+	margin: 9px 10px;
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
+.flight,.hotel,.car{
+	float: left;
+	margin-right: 5px;
+	width: 250px;
+	height: 225px;
+}
+
+img{ 
+max-width: 100%; height: auto; 
+}
+
+.loc_details {
+    width: 250px;
+	height: 250px;
+    padding: 1px;
+    border: 2px solid gray;
+}
+
+.loc_details img {width: 100%; height: 180px; }
+
+.vote{
+	display: inline-block;
+}
+
+.upvote{
+  display: inline-block;
+  width: 60px;
+  height: 55px;
+  cursor: pointer;
+  background: url("./Wallpapers/up.png");
+  background-size: 100%;	
+}
+.upvote:active {
+    width: 65px;
+    height: 60px;
+}
+ 
+ .error { color: red; font-size: 12px; }
+
+.loginform input { padding: 5px; margin-bottom: 10px;}
+
+.downvote{
+  display: inline-block;
+  width: 60px;
+  height: 55px;
+  cursor: pointer;
+  background: url("./Wallpapers/down.png");
+  background-size: 100%;
+}
+.downvote:active {
+    width: 65px;
+    height: 60px;
+}
+  
+.box1 {
+	background-color: rgba(255, 255, 255, 0.6);
+	width: 75px;
+	text-align: center;
+	box-shadow: 0 10px 6px -6px #777;
+	float: left;
+	margin-right: 10px;
+	margin-top: 36px;
+}  
+
+.table1{
+	background: rgba(255,255,255,0.5);
+}

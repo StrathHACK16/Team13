@@ -25,6 +25,8 @@ class Main extends CI_Controller {
 	
 	public function trip($id = 0)
 	{
+		$this -> load -> model ('votes');
+		
 		if($id == 0)
 			exit("No id!");
 		
@@ -42,10 +44,33 @@ class Main extends CI_Controller {
 			}
 			
 			$toSend['result'] = $result;
+			$toSend['trip_id'] = $id;
 			
-			$this -> load -> view('trip', $toSend);
+			$this -> load -> view('header', $toSend);
+			$this -> load -> view('details', $toSend);
+			$this -> load -> view('footer');
 		}
 		else
 			exit("No trip id found!");
+	}
+	
+	public function add_votes($location_id, $type)
+	{
+				
+		$this -> load -> model('votes');
+		
+		$this -> db -> select('*');
+		$this -> db -> from('location');
+		$this -> db -> where('id', $location_id);
+		$query = $this -> db -> get();
+	
+		$data = $query -> result_array();
+		
+		if($type == 1)
+			$this -> votes -> add_vote($this -> session -> userdata('logged_in')['id'], $location_id);
+		else
+			$this -> votes -> remove_vote($this -> session -> userdata('logged_in')['id'], $location_id);
+		
+		redirect('main/trip/' . $data[0]['trip_id']);
 	}
 }

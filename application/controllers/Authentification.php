@@ -31,7 +31,7 @@ class Authentification extends CI_Controller {
 				$this -> session -> set_userdata('logged_in', $sess_array);
 			   
 			}
-			 redirect('/auth/');
+			 redirect('/members/');
 		   }
 		   else
 		   {
@@ -44,5 +44,21 @@ class Authentification extends CI_Controller {
 	{
 		$this -> session -> sess_destroy();
         redirect('');
+	}
+	
+	public function register()
+	{
+		$this -> load -> model('user');
+		
+		if($this->input->post('email'))
+			if (!$this->user->email_exist($this->input->post('email')))
+			{
+				$this->user->add_username($this->input->post('name'), $this->input->post('email'), $this->input->post('password'));
+				redirect();
+			}
+			else
+				$this -> session -> set_userdata('error_message', 'Email already registered.');
+			
+		$this->load->view('register');
 	}
 }

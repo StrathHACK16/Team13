@@ -13,11 +13,11 @@
 <?php if(!empty($this -> session -> userdata('error_message'))) : ?>
 	<div class="error"><?php echo $this -> session -> userdata('error_message'); $this -> session -> set_userdata('error_message', '') ; ?></div>
 <?php endif; ?>
-<form class="loginform" name="login" action="<?php echo base_url('authentification/login'); ?>" method="post" accept-charset="utf-8">
-	  <input type="text" name="username" placeholder="email address"/>
+<form class="loginform" name="login" action="<?php echo base_url('authentification/register'); ?>" method="post" accept-charset="utf-8">
+	  <input type="text" name="name" placeholder="Full Name"/>
+	  <input type="text" name="email" placeholder="email address"/>
       <input type="password" name="password" placeholder="password" />
-      <button>login</button>
-      <p class="message">Not registered? <a href="<?php echo base_url('authentification/register'); ?>">Sign up</a></p>
+      <button>Register</button>
  </form>
 </div>
 </section>

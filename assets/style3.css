@@ -1,0 +1,106 @@
+
+h1 { color: #FFFFFF; text-shadow: 0 0 10px rgba(0,0,0,0.3); letter-spacing:3px; text-align:center; }
+
+.loginpage {
+  width: 200px;
+  padding: 0 0 0;
+  margin: auto;
+}
+
+.loginform{
+position: relative;
+padding-top: 80px;
+opacity: 0.85;
+margin: 0 auto;
+text-align: center;
+margin: auto;
+}
+
+.loginform button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 95%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.loginform button:hover,.loginform button:active,.loginform button:focus {
+  background: #43A047;
+}
+
+html, body {
+background-size: cover;
+height: 100%;
+ overflow: auto;
+ margin: 0;
+ font-family: "Roboto", sans-serif;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale; 
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.maps:hover, .home:hover, .plan:hover, .about:hover{
+	background: #43A047;
+}
+
+.active {
+background-color:#4CAF50;
+}
+
+.node, .item{
+display: inline-block;
+width:auto;
+height:auto;
+line-height:3em;
+overflow:auto;
+position: relative;
+float: top;
+padding:5px;
+}
+
+.node{
+padding-top: 100px;
+padding-left: 30%;
+}
+
+
+.location{
+	display: inline-block;
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
+img{ 
+max-width: 100%; height: auto; 
+}
+
+.loc_details {
+    width: 300px;
+	height: 450px;
+    padding: 1px;
+    border: 2px solid gray;
+}

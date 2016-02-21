@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'triptracker-cluster.cluster-cta8ugp2v82z.eu-west-1.rds.amazonaws.com',
-	'username' => 'triptracker',
-	'password' => 'aLDcBSVq3HTgebFD',
-	'database' => 'triptracker',
+	'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => '',
+	'database' => 'travel',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
