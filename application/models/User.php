@@ -4,7 +4,7 @@ Class User extends CI_Model
  function login($username, $password)
  {
    $this -> db -> select('id, email, password');
-   $this -> db -> from('users');
+   $this -> db -> from('customerdetails');
    $this -> db -> where('email', $username);
    $this -> db -> where('password',$password);
    $this -> db -> limit(1);
