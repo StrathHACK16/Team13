@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://trip-scanner.net/';
+$config['base_url'] = 'http://ec2-54-229-80-146.eu-west-1.compute.amazonaws.com/';
 
 /*
 |--------------------------------------------------------------------------
