@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <title></title>
-<link href="<?php echo base_url('assets/style.css'); ?>" rel="stylesheet" type="text/css">
+<link href="assets/style.css" rel="stylesheet" type="text/css">
 </head>
-<body background="<?php echo base_url('assets/Wallpapers/wall2.jpg'); ?>">
+<body background="assets/Wallpapers/wall2.jpg">
 <h1>TRIP SCANNER</h1>
 <section class="loginform cf">
 

@@ -17,7 +17,7 @@
 	  <input type="text" name="username" placeholder="email address"/>
       <input type="password" name="password" placeholder="password" />
       <button>login</button>
-      <p class="message">Not registered? <a href="<?php echo base_url('authentification/register'); ?>">Sign up</a></p>
+      <p class="message">Not registered? <a href="authentification/register">Sign up</a></p>
  </form>
 </div>
 </section>
