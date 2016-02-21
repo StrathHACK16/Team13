@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <title></title>
-<link href="assets/style.css" rel="stylesheet" type="text/css">
+<link href="http://trip-scanner.net/assets/style.css" rel="stylesheet" type="text/css">
 </head>
-<body background="assets/Wallpapers/wall2.jpg">
+<body background="http://trip-scanner.net/assets/Wallpapers/wall2.jpg">
 <h1>TRIP SCANNER</h1>
 <section class="loginform cf">
 
@@ -17,7 +17,7 @@
 	  <input type="text" name="username" placeholder="email address"/>
       <input type="password" name="password" placeholder="password" />
       <button>login</button>
-      <p class="message">Not registered? <a href="authentification/register">Sign up</a></p>
+      <p class="message">Not registered? <a href="http://trip-scanner.net/authentification/register">Sign up</a></p>
  </form>
 </div>
 </section>
