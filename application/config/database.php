@@ -75,7 +75,7 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'triptracker.cta8ugp2v82z.eu-west-1.rds.amazonaws.com',
+	'hostname' => 'triptracker-cluster.cluster-cta8ugp2v82z.eu-west-1.rds.amazonaws.com',
 	'username' => 'triptracker',
 	'password' => 'aLDcBSVq3HTgebFD',
 	'database' => 'triptracker',
